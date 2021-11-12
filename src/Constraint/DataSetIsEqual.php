@@ -15,7 +15,7 @@ use PHPUnit\DbUnit\InvalidArgumentException;
 use PHPUnit\Framework\Constraint\Constraint;
 
 /**
- * Asserts whether or not two dbunit datasets are equal.
+ * Asserts whether two dbunit datasets are equal.
  */
 class DataSetIsEqual extends Constraint
 {
@@ -36,7 +36,6 @@ class DataSetIsEqual extends Constraint
      */
     public function __construct(IDataSet $value)
     {
-        parent::__construct();
         $this->value = $value;
     }
 
